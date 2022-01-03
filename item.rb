@@ -3,7 +3,7 @@ require 'date'
 class Item
   attr_accessor :publish_date
 
-  def initialize(publish_date, archived, id= Random.rand(1..1000))
+  def initialize(publish_date, archived, id = Random.rand(1..1000))
     @id = id
     @publish_date = publish_date
     @archived = archived
@@ -14,8 +14,6 @@ class Item
   end
 
   def move_to_archive
-    if can_be_archived?
-      @archived = can_be_archived?
-    end
+    @archived = can_be_archived? if can_be_archived?
   end
 end
