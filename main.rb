@@ -12,7 +12,7 @@ def main
   puts ''
   loop do
     option = main_ui.present_options
-    break if option == 0
+    break if option.zero?
   end
 end
 
