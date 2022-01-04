@@ -14,7 +14,7 @@ describe Book.new('2021-07-04', false, 'Santillan', 'bad') do
     end
   end
 
-  context "Books cover_state is bad" do
+  context 'Books cover_state is bad' do
     it 'should return true' do
       book = Book.new('2021-07-04', false, 'Santillan', 'bad')
       book.move_to_archive
