@@ -40,7 +40,7 @@ class MusicAlbumOptions
 
     file = File.read('./music_album.json')
     return [] if file.empty?
-    
+
     JSON.parse(file).each do |data|
       music_album = JSON.parse(data)
       music_albums.push(MusicAlbum.new(music_album['publish_date'], music_album['archived'], music_album['on_spotify']))
