@@ -2,7 +2,7 @@ require_relative './music_album'
 
 class MusicAlbumOptions
   def initialize
-    @music_albums = [MusicAlbum.new('2020-12-12', true, true)]
+    @music_albums = []
   end
 
   def add_music_album
