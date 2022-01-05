@@ -19,6 +19,7 @@ class MusicAlbumOptions
   end
 
   def list_all_music_albums
+    puts 'There is no registered music_albums.' if @music_albums.empty?
     @music_albums.each do |music_album|
       print "\n Publish: #{music_album.publish_date}"
       print " Archived: #{music_album.archived}"
@@ -52,5 +53,3 @@ class MusicAlbumOptions
     File.write('./music_album.json', serialize)
   end
 end
-
-# test[:publish_date]
