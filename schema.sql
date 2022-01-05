@@ -10,6 +10,8 @@ CREATE Table items (
 CREATE Table genres (
   id INT GENERATED ALWAYS AS IDENTITY,
   name VARCHAR(250),
+  publish_date DATE,
+  archived BOOLEAN,
   PRIMARY KEY(id)
 );
 
