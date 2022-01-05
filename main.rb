@@ -39,6 +39,7 @@ class Main
       @genre_options.list_all_genres
     when 6
       @music_album_options.add_music_album
+      @music_album_options.save_json
     end
   end
 end
