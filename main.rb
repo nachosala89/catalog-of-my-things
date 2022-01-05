@@ -86,7 +86,7 @@ def main
   loop do
     option = main_ui.present_options
     break if option == 7
-    
+
     main_ui.router(option)
   end
 end
