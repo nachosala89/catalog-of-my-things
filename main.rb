@@ -33,6 +33,7 @@ class Main
       @label_options.list_labels
     when 3
       @book_options.add_book
+      @book_options.save_json
     when 4
       @music_album_options.list_all_music_albums
     when 5
