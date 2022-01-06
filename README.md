@@ -15,11 +15,17 @@
 
 - Run git clone on this project at the desired directory:
    ```
-   git clone https://github.com/nachosala89/tdd-project
+   git clone https://github.com/nachosala89/catalog-of-my-things.git
    ```
-- Go to the cloned directory with `cd tdd-project`.
+- Go to the cloned directory with `cd catalog-of-my-things`.
 - Install dependencies with bundle i.
 - install RSpec on your system with gem install rspec
+
+### Run the program
+- Follow the setup instructions.
+- Make sure you're inside the correct directory `catalog-of-my-things`.
+- With Ruby installed in your environment, you can run `ruby main.rb` on the terminal.
+- Follow the instructions that the terminal shows you to use the program.
 
 ### Tests
 
