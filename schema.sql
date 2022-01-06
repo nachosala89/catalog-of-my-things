@@ -18,6 +18,8 @@ CREATE Table music_albums (
   publish_date DATE,
   archived BOOLEAN,
   on_spotify BOOLEAN,
+  genre_id INT,
+  label_id INT,
   PRIMARY KEY (id),
   CONSTRAINT fk_genre FOREIGN KEY(genre_id) REFERENCES genres(id),
   CONSTRAINT fk_label FOREIGN KEY(label_id) REFERENCES labels(id)
